@@ -14,9 +14,9 @@ use kornia_image::{Image, ImageError};
 ///
 /// The YUV image with the following channels:
 ///
-/// * Y: The luma component.
-/// * U: The blue-difference chroma component.
-/// * V: The red-difference chroma component.
+/// * Y: The luma channel in the range [0, 1.0].
+/// * U: The blue-difference chroma channel in the range [-0.436, 0.436].
+/// * V: The red-difference chroma channel in the range [-0.615, 0.615].
 ///
 /// Precondition: the input image must have 3 channels.
 /// Precondition: the output image must have 3 channels.
